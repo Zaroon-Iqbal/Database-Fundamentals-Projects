@@ -1,0 +1,67 @@
+{
+  "_id": {
+    "$oid": "638d2f594556ff718471e5a9"
+  },
+  "name": "Regal Edwards Long Beach",
+  "address": "7501 E Carson St",
+  "city": "Long Beach",
+  "state": "CA",
+  "zipcode": "90808",
+  "rooms": [
+    {
+      "title": "Screen1",
+      "capacity": 5,
+      "formats": [
+        "Standard",
+        "IMAX"
+      ],
+      "seats": [
+        {
+          "number": "Seat 1",
+          "labels": [
+            "reclining"
+          ]
+        },
+        {
+          "number": "Seat 2",
+          "labels": [
+            "reclining"
+          ]
+        },
+        {
+          "number": "Seat 3",
+          "labels": [
+            "reclining"
+          ]
+        },
+        {
+          "number": "Seat 4",
+          "labels": [
+            "reclining"
+          ]
+        },
+        {
+          "number": "Seat 5",
+          "labels": [
+            "accessible seating",
+            "non-reclining"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Screen2",
+      "capacity": 1,
+      "formats": [
+        "IMAX",
+        "ScreenX"
+      ],
+      "seats": [
+        {
+          "number": "Seat 1",
+          "labels": []
+        }
+      ]
+    }
+  ]
+}

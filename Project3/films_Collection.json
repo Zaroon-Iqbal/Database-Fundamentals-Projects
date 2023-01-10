@@ -1,0 +1,69 @@
+[
+  {
+    "title": "No Time to Die",
+    "duration": 163,
+    "releaseDate": { "$date": "2021-10-08" },
+    "rating": "PG-13",
+    "genres": [ "Action", "Adventure", "Thriller" ],
+    "actors": []
+  },
+
+
+  {
+    "title": "Black Panther: Wakanda Forever",
+    "duration": 161,
+    "releaseDate": { "$date": "2022-11-10" },
+    "rating": "PG-13",
+    "genres": [ "Action", "Adventure", "Superhero" ],
+    "actors": [
+      {
+        "actorId": {
+          "$oid": "63952b1367ee724f534cce46"
+        },
+        "firstName": "Letitia",
+        "lastName": "Wright"
+      },
+      {
+        "actorId": {
+          "$oid": "63952b2267ee724f534cce48"
+        },
+        "firstName": "Lupita ",
+        "lastName": "Nyong’o"
+      },
+      {
+        "actorId": {
+          "$oid": "6395285167ee724f534cce3c"
+        },
+        "firstName": "Angela",
+        "lastName": "Bassett"
+      },
+      {
+        "actorId": {
+          "$oid": "6395296f67ee724f534cce3f"
+        },
+        "firstName": "Danai",
+        "lastName": "Gurira"
+      }
+
+    ]
+  },
+
+
+  {
+    "title": "Akeelah and the Bee",
+    "duration": 112,
+    "releaseDate": { "$date": "2006-03-16" },
+    "rating": "PG",
+    "genres": [ "Family", "Drama" ],
+    "actors": [
+      {
+        "actorId": {
+          "$oid": "6395285167ee724f534cce3c"
+        },
+        "firstName": "Angela",
+        "lastName": "Bassett"
+      }
+    ]
+  }
+
+]

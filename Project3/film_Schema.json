@@ -1,0 +1,73 @@
+{
+  "$jsonSchema": {
+    "title": "film",
+    "description": "A film shown at theaters.",
+    "bsonType": "object",
+    "required": [
+      "title",
+      "duration",
+      "releaseDate",
+      "rating",
+      "genres",
+      "actors"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "title": {
+        "bsonType": "string"
+      },
+      "duration": {
+        "bsonType": "int",
+        "minimum": 1
+      },
+      "releaseDate": {
+        "bsonType": "date"
+      },
+      "rating": {
+        "bsonType": "string",
+        "enum": [
+          "NR",
+          "G",
+          "PG",
+          "PG-13",
+          "R",
+          "NC-17"
+        ]
+      },
+      "genres": {
+        "bsonType": "array",
+        "minItems": 1,
+        "items": {
+          "bsonType": "string"
+        }
+      },
+      "actors": {
+        "bsonType": "array",
+        "items": {
+          "title": "actor",
+          "description": "an actor in a film",
+          "bsonType": "object",
+          "required": [
+            "actorId",
+            "firstName",
+            "lastName"
+          ],
+          "properties": {
+            "actorId": {
+              "bsonType": "objectId"
+            },
+            "firstName": {
+              "bsonType": "string"
+            },
+            "lastName": {
+              "bsonType": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,43 @@
+[
+  {
+    "firstName": "Angela",
+    "lastName": "Bassett",
+    "birthday": {
+      "$date": "1958-08-16"
+    },
+    "IMBDURL": "https://www.imdb.com/name/nm0000291/"
+  },
+
+
+
+  {
+    "firstName": "Letitia",
+    "lastName": "Wright",
+    "birthday": {
+      "$date": "1993-10-31"
+    },
+    "IMBDURL": "https://www.imdb.com/name/nm4004793/"
+  },
+
+
+  {
+    "firstName": "Lupita",
+    "lastName": "Nyong'o",
+    "birthday": {
+      "$date": "1993-03-01"
+    },
+    "IMBDURL": "https://www.imdb.com/name/nm2143282/"
+  },
+
+
+
+
+  {
+    "firstName": "Danai",
+    "lastName": "Gurira",
+    "birthday": {
+      "$date": "1978-02-14"
+    },
+    "IMBDURL": "https://m.imdb.com/name/nm1775091/?ref_=m_nmfm_nm"
+  }
+]
