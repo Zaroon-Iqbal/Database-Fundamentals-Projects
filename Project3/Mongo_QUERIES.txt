@@ -1,0 +1,55 @@
+--Select all films that have "Action" as one of their genres, sorted by film title.
+db.films.aggregate([
+    {
+        '$match': {
+            'genres': 'Action'
+        }
+    }, {
+        '$sort': {
+            'title': 1
+        }
+    }
+])
+
+--Select the showtime of all Black Panther: Wakanda Forever showings that are on November 11. You don't need to use joins; you can hard-code the filmId of this film. Hint: you can use a filter with both $lt and $gt comparisons. A date is on November 11 2022 if it is greater than midnight of November 11 and less than ____.... To put a date into a query, you must write ISODate("..."), where the parameter is the date in YYYY-MM-DD format.
+
+db.showings.aggregate([{
+        $match: {
+            filmId: ObjectId("638d2ddf4556ff718471e59e"),
+            showTime: {
+                $lt: ISODate("2022-11-12T00:00:00.000Z"),
+                $gt: ISODate("2022-11-10T23:59:59.000Z"),
+            },
+        },
+    },
+    {
+        $project: {
+            showTime: 1,
+            filmTitle: 1,
+        },
+    },
+])
+
+ 
+ 
+--For each theater, select the name of the theater and also a list of all the film titles and showtimes of all showings scheduled in the theater. This requires a join from theater to showing.
+
+
+db.theaters.aggregate([
+    {
+        '$lookup': {
+            'from': 'showings', 
+            'localField': '_id', 
+            'foreignField': 'theaterId', 
+            'as': 'theaterShowings'
+        }
+    }, {
+        '$project': {
+            'name': 1, 
+            'theaterShowings': {
+                'filmTitle': 1, 
+                'showTime': 1
+            }
+        }
+    }
+])

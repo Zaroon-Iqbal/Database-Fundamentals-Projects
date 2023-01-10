@@ -1,0 +1,30 @@
+{
+  "$jsonSchema": {
+    "title": "actors",
+    "description": "An actor stars in a film",
+    "bsonType": "object",
+    "required": [
+      "firstName",
+      "lastName",
+      "birthday",
+      "IMBDURL"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "firstName": {
+        "bsonType": "string"
+      },
+      "lastName": {
+        "bsonType": "string"
+      },
+      "birthday": {
+        "bsonType": "date"
+      },
+      "IMBDURL": {
+        "bsonType": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "638bda268804c6460e623308"
+  },
+  "theaterId": {
+    "$oid": "638d2f594556ff718471e5a9"
+  },
+  "roomTitle": "Screen 1",
+  "filmId": {
+    "$oid": "638d2ddf4556ff718471e59e"
+  },
+  "filmTitle": "Black Panther: Wakanda Forever",
+  "filmRating": "PG-13",
+  "showTime": {
+    "$date": {
+      "$numberLong": "1668095100000"
+    }
+  },
+  "format": "Standard",
+  "tickets": [
+    {
+      "_id": {
+        "$oid": "3c4f626a656374496428293e"
+      },
+      "price": 18,
+      "seatNumber": "Seat 1"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "638bdb978804c6460e62330e"
+  },
+  "theaterId": {
+    "$oid": "638d2f594556ff718471e5a9"
+  },
+  "roomTitle": "Screen 1",
+  "filmId": {
+    "$oid": "638d2ddf4556ff718471e59e"
+  },
+  "filmTitle": "Black Panther: Wakanda Forever",
+  "filmRating": "PG-13",
+  "showTime": {
+    "$date": {
+      "$numberLong": "1668106800000"
+    }
+  },
+  "format": "IMAX",
+  "tickets": [
+    {
+      "_id": {
+        "$oid": "3c4f626a656374496428293e"
+      },
+      "price": 22,
+      "seatNumber": "Seat 1"
+    },
+    {
+      "_id": {
+        "$oid": "3c4f626a656374496428293e"
+      },
+      "price": 15,
+      "seatNumber": "Seat 5"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "638bdd878804c6460e623314"
+  },
+  "theaterId": {
+    "$oid": "638d2f594556ff718471e5a9"
+  },
+  "roomTitle": "Screen 1",
+  "filmId": {
+    "$oid": "638d2ddf4556ff718471e59e"
+  },
+  "filmTitle": "Black Panther: Wakanda Forever",
+  "filmRating": "PG-13",
+  "showTime": {
+    "$date": {
+      "$numberLong": "1668258000000"
+    }
+  },
+  "format": "Standard",
+  "tickets": []
+}]
