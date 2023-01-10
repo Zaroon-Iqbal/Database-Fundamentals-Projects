@@ -1,0 +1,13 @@
+Class Descriptions:
+
+Film: A Film is a motion picture that is Showcased in many different Rooms of a Theater. A Ticket can be purchased for many different Seats for a particular Showing of a Film.
+
+Theater: A Theater is a building that Showcases many different Films in many Rooms where people can reserve a Seat by purchasing a Ticket.
+
+Room: A Room is where many Films are Showcased at a Theater. The Rooms contain many Seats that can be reserved by purchasing a Ticket for a Showing.
+
+Seat: A Seat can be reserved for a Showing of a Film at a Theater by purchasing a Ticket. 
+
+Showing: A Showing is a time at which a particular Film will be shown in the specific Room that a Theater assigns to it. Many Tickets can be purchased for a particular Showing.
+
+Ticket: A Ticket is purchased for one specific Seat in a Room for a Showing of a Film in a Theater.

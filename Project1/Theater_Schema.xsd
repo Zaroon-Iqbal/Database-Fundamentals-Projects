@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Label">
+   <xs:complexType>
+       <xs:sequence>
+           <xs:element name="seatLabel" type="xs:string" />
+       </xs:sequence>
+   </xs:complexType>
+</xs:element>
+
+<xs:element name="Format">
+   <xs:complexType>
+       <xs:sequence>
+           <xs:element name="formatType" type="xs:string" />
+       </xs:sequence>
+   </xs:complexType>
+</xs:element>
+
+
+
+<xs:element name="Seat">
+   <xs:complexType>
+       <xs:sequence>
+           <xs:element name="name" type="xs:string" />
+           <xs:element name = "seatLabels">
+               <xs:complexType>
+                   <xs:sequence>
+                       <xs:element ref="Label" minOccurs="0" maxOccurs = "unbounded"  />
+                   </xs:sequence>
+               </xs:complexType>
+           </xs:element>
+       </xs:sequence>
+   </xs:complexType>
+</xs:element>
+
+<xs:element name="Room">
+   <xs:complexType>
+       <xs:sequence>
+           <xs:element name="Title" type="xs:string" />
+           <xs:element name="capacity" type="xs:int" />
+           <xs:element name = "formats">
+               <xs:complexType>
+                   <xs:sequence>
+                       <xs:element ref="Format" minOccurs="0" maxOccurs = "unbounded"  />
+                   </xs:sequence>
+               </xs:complexType>
+           </xs:element>
+           <xs:element name = "Seats">
+               <xs:complexType>
+                   <xs:sequence>
+               <!-- If possible, changing the maxOccurs to the capacity value would be accurate -->
+                       <xs:element ref="Seat" minOccurs="0" maxOccurs = "unbounded"  />
+                   </xs:sequence>
+               </xs:complexType>
+           </xs:element>
+       </xs:sequence>
+   </xs:complexType>
+</xs:element>
+
+<xs:element name="Theater">
+   <xs:complexType>
+       <xs:sequence>
+           <xs:element name="streetAddress" type="xs:string" />
+           <xs:element name="city" type="xs:string" />
+           <xs:element name="state" type="xs:string" />
+           <xs:element name="zipcode" type="xs:int" />
+           <xs:element name = "Rooms">
+               <xs:complexType>
+                   <xs:sequence>
+                       <xs:element ref="Room" minOccurs="0" maxOccurs = "unbounded"  />
+                   </xs:sequence>
+               </xs:complexType>
+           </xs:element>
+       </xs:sequence>
+   </xs:complexType>
+</xs:element>
